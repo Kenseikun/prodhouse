@@ -1,0 +1,37 @@
+.navbar__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #060028;
+  z-index: 5;
+}
+
+.navbar {
+  &__logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-family: $secFont;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.navbar-toggler {
+  padding: 10px;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+  border-radius: 50%;
+}

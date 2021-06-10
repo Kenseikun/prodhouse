@@ -1,0 +1,63 @@
+.header {
+  position: relative;
+  background: rgb(90,58,201);
+  background: linear-gradient(8deg, rgba(90,58,201,1) 0%, rgba(6,0,40,1) 66%);
+  height: 100vh;
+  border-radius: 0px 0px 55% 25%;
+  color: #fff;
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      font-family: $mainFont;
+      font-size: 55px;
+      font-weight: 700;
+    }
+
+    p {
+      font-family: $secFont;
+      font-size: 18px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      background-color: #fff;
+      padding: 10px;
+      width: 30%;
+      color: black;
+      border-radius: 8px;
+
+      z-index: 2;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 80%;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+
+    &__wrapper {
+      h1 {
+        font-size: 100px;
+      }
+    }
+
+    &__logo {
+      width: 60%;
+    }
+  }
+}

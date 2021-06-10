@@ -1,0 +1,32 @@
+.footer {
+  text-align: center;
+  color: #fff;
+  background: rgb(110, 84, 200);
+  background: linear-gradient(
+    198deg,
+    rgba(110, 84, 200, 1) 0%,
+    rgba(6, 0, 40, 1) 91%
+  );
+
+  border-radius: 65% 25% 0 0;
+
+  p {
+    font-family: $mainFont;
+    font-size: 28px;
+  }
+
+  button {
+    background-color: #ef4b6c;
+    color: #fff;
+    font-family: $secFont;
+    padding: 16px 32px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+  }
+
+  i {
+    font-size: 40px;
+  }
+}
