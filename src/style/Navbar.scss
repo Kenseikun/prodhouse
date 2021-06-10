@@ -14,7 +14,7 @@
   }
 
   .nav-link {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
     font-family: $secFont;
     font-size: 15px;
@@ -29,9 +29,12 @@
 
 .navbar-toggler {
   padding: 10px;
+  outline: none;
 }
 
 .navbar-toggler-icon {
-  background-color: #fff;
+  background-color: #060028;
   border-radius: 50%;
+  outline: none;
+  color: white;
 }

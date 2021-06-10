@@ -34,6 +34,9 @@ const NavBar = () => {
           <a className="nav-link" href="/contact">
             Kontakt
           </a>
+          <a className="nav-link" href="/contact">
+          <i className="fab fa-instagram-square"></i>
+          </a>
         </div>
       </nav>
     </div>

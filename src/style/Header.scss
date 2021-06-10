@@ -1,7 +1,11 @@
 .header {
   position: relative;
-  background: rgb(90,58,201);
-  background: linear-gradient(8deg, rgba(90,58,201,1) 0%, rgba(6,0,40,1) 66%);
+  background: rgb(90, 58, 201);
+  background: linear-gradient(
+    8deg,
+    rgba(90, 58, 201, 1) 0%,
+    rgba(6, 0, 40, 1) 66%
+  );
   height: 100vh;
   border-radius: 0px 0px 55% 25%;
   color: #fff;
@@ -30,11 +34,39 @@
       text-decoration: none;
       background-color: #fff;
       padding: 10px;
-      width: 30%;
+      width: 50%;
       color: black;
-      border-radius: 8px;
+      border-radius: 25px;
 
       z-index: 2;
+    }
+
+    .scroll {
+      position: relative;
+      width: 30px;
+      height: 60px;
+      background-color: #fff;
+      border-radius: 50px;
+      box-shadow: inset 0px 0px 15px -3px #5544f3;
+
+      &::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: rgb(90, 58, 201);
+        background: linear-gradient(
+          0deg,
+          rgba(90, 58, 201, 1) 0%,
+          rgb(37, 25, 106) 66%
+        );
+
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: 2s scroll infinite ease-in-out;
+      }
     }
   }
 
@@ -47,12 +79,30 @@
   }
 }
 
+@keyframes scroll {
+  0% {
+    top: 5px;
+  }
+
+  50% {
+    top: 30px;
+    opacity: 0.5;
+  }
+
+  100% {
+    top: 5px;
+  }
+}
+
 @media (min-width: 768px) {
   .header {
-
     &__wrapper {
       h1 {
         font-size: 100px;
+      }
+
+      a {
+        width: 30%;
       }
     }
 

@@ -1,4 +1,6 @@
 .footer {
+  scroll-snap-align: start;
+
   text-align: center;
   color: #fff;
   background: rgb(110, 84, 200);
@@ -15,7 +17,7 @@
     font-size: 28px;
   }
 
-  button {
+  &__mail {
     background-color: #ef4b6c;
     color: #fff;
     font-family: $secFont;
@@ -23,10 +25,14 @@
     border-radius: 25px;
     border: none;
     outline: none;
-    font-weight: 700;
+    font-weight: 500;
+    text-decoration: none;
   }
 
-  i {
-    font-size: 40px;
+  &__instagram, &__instagram:active {
+    color: #fff;
+    i {
+      font-size: 40px;
+    }
   }
 }

@@ -1,0 +1,36 @@
+.offer {
+  scroll-snap-align: start;
+  
+  h2 {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 34px;
+
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 50%;
+      height: 2px;
+      background-color: #d2506e;
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__tail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 40px;
+      border-radius: 0 0 8px 8px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+  }
+}
