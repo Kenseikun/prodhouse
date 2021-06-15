@@ -1,5 +1,5 @@
 .footer {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 
   text-align: center;
   color: #fff;
@@ -29,8 +29,14 @@
     text-decoration: none;
   }
 
-  &__instagram, &__instagram:active {
+  a:hover {
+    color: black;
+  }
+
+  &__instagram,
+  &__instagram:active {
     color: #fff;
+
     i {
       font-size: 40px;
     }

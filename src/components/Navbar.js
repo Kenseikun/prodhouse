@@ -21,10 +21,16 @@ const NavBar = () => {
           aria-label="Toggle navigation"
           onClick={handleNavCollapse}
         >
-          <span className="navbar-toggler-icon d-flex justify-content-center align-items-center"><i class="fas fa-ellipsis-h"></i></span>
+          <span className="navbar-toggler-icon d-flex justify-content-center align-items-center">
+            <i class="fas fa-ellipsis-h"></i>
+          </span>
         </button>
 
-        <div className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse d-md-flex justify-content-end`}>
+        <div
+          className={`${
+            isNavCollapsed ? "collapse" : ""
+          } navbar-collapse d-md-flex justify-content-end`}
+        >
           <a className="nav-link" href="/about">
             O nas
           </a>
@@ -35,8 +41,12 @@ const NavBar = () => {
             Kontakt
           </a>
           <a className="nav-link" href="/contact">
-          <i className="fab fa-instagram-square"></i>
+            <i className="fab fa-instagram-square"></i>
           </a>
+          <div className="nav-link navbar__numbers d-flex flex-column align-items-center w-sm-100">
+            <a href="tel:+48516586965" className="mb-2">516 586 965</a>
+            <a href="tel:+48725108738">725 108 738</a>
+          </div>
         </div>
       </nav>
     </div>

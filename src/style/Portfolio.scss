@@ -1,0 +1,98 @@
+.portfolio {
+  position: relative;
+  scroll-snap-align: center;
+
+  &::before {
+    font-family: "FontAwesome";
+    content: "\f105";
+
+    position: absolute;
+    top: calc(50% + 20px);
+    left: 90%;
+    transform: translate(-50%);
+    font-size: 30px;
+    animation: 2s arrow infinite ease-in-out;
+  }
+
+  h2 {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 34px;
+
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 50%;
+      height: 2px;
+      background-color: #d2506e;
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__gallery {
+    overflow-x: auto;
+    display: flex;
+
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    img {
+      height: 200px;
+      scroll-snap-align: center;
+    }
+  }
+}
+
+@keyframes arrow {
+  0% {
+    left: 94%;
+  }
+
+  50% {
+    left: 96%;
+  }
+
+  100% {
+    left: 94%;
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio {
+    ::-webkit-scrollbar {
+      width: 13px;
+      height: 13px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(13deg, #f9d4ff 14%, #c7ceff 64%);
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(13deg, #c7ceff 14%, #f9d4ff 64%);
+    }
+    ::-webkit-scrollbar-track {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: inset 7px 10px 12px #f0f0f0;
+    }
+
+    &__gallery {
+      &::-webkit-scrollbar {
+        display: block;
+      }
+
+      img {
+        height: 400px;
+      }
+    }
+  }
+}

@@ -1,30 +1,22 @@
 import React from "react";
 
+import { a, b, c, d, e, f, g, h, i, j } from "../assets/images/gallery";
+
+const images = [a, b, c, d, e, f, g, h, i, j];
+
 const Portfolio = () => {
   return (
-    <div className="portfolio container d-flex flex-column justify-content-center align-items-center">
+    <div className="portfolio container d-flex flex-column justify-content-center align-items-center mb-5">
       <h2 className="mb-5">Portfolio</h2>
 
-      <div>
-        <img className="w-25"
-          src="https://1.bp.blogspot.com/-vFP71gk-ZDw/YC-JJEv9J6I/AAAAAAAAISc/5ZS5VWsBWTgbSi7ybdCo4gIKMawYcz-TgCLcBGAsYHQ/s1000/Miskowe_4.jpg"
-          alt=""
-        />
-
-        <img className="w-25"
-          src="https://1.bp.blogspot.com/-vFP71gk-ZDw/YC-JJEv9J6I/AAAAAAAAISc/5ZS5VWsBWTgbSi7ybdCo4gIKMawYcz-TgCLcBGAsYHQ/s1000/Miskowe_4.jpg"
-          alt=""
-        />
-
-        <img className="w-25"
-          src="https://1.bp.blogspot.com/-vFP71gk-ZDw/YC-JJEv9J6I/AAAAAAAAISc/5ZS5VWsBWTgbSi7ybdCo4gIKMawYcz-TgCLcBGAsYHQ/s1000/Miskowe_4.jpg"
-          alt=""
-        />
-
-        <img className="w-25"
-          src="https://1.bp.blogspot.com/-vFP71gk-ZDw/YC-JJEv9J6I/AAAAAAAAISc/5ZS5VWsBWTgbSi7ybdCo4gIKMawYcz-TgCLcBGAsYHQ/s1000/Miskowe_4.jpg"
-          alt=""
-        />
+      <div className="portfolio__gallery">
+        {images.map((image) => {
+          return (
+            <>
+              <img src={image} alt={image} />
+            </>
+          );
+        })}
       </div>
     </div>
   );

@@ -25,6 +25,16 @@
       color: #fff;
     }
   }
+
+  &__numbers {
+    a {
+      color: #fff;
+      text-decoration: none;
+      background-color: #ef4b6c;
+      padding: 2px 12px;
+      border-radius: 8px;
+    }
+  }
 }
 
 .navbar-toggler {
@@ -36,5 +46,5 @@
   background-color: #060028;
   border-radius: 50%;
   outline: none;
-  color: white;
+  color: #fff;
 }
