@@ -1,3 +1,4 @@
+import Copyrights from "./components/Copyrights";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import NavBar from "./components/Navbar";
@@ -13,6 +14,7 @@ function App() {
       <Offer />
       <Portfolio />
       <Footer />
+      <Copyrights />
     </>
   );
 }

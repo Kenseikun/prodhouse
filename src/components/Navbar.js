@@ -31,20 +31,29 @@ const NavBar = () => {
             isNavCollapsed ? "collapse" : ""
           } navbar-collapse d-md-flex justify-content-end`}
         >
-          <a className="nav-link" href="/about">
+          <a className="nav-link" href="#header">
             O nas
           </a>
-          <a className="nav-link" href="/offer">
+          <a className="nav-link" href="#offer">
             Oferta
           </a>
-          <a className="nav-link" href="/contact">
+          <a className="nav-link" href="#portfolio">
+            Portfolio
+          </a>
+          <a className="nav-link" href="#contact">
             Kontakt
           </a>
-          <a className="nav-link" href="/contact">
+          <a
+            className="nav-link"
+            href="https://www.instagram.com/prod.house.pl/"
+            target="blank"
+          >
             <i className="fab fa-instagram-square"></i>
           </a>
           <div className="nav-link navbar__numbers d-flex flex-column align-items-center w-sm-100">
-            <a href="tel:+48516586965" className="mb-2">516 586 965</a>
+            <a href="tel:+48516586965" className="mb-2">
+              516 586 965
+            </a>
             <a href="tel:+48725108738">725 108 738</a>
           </div>
         </div>

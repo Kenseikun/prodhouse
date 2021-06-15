@@ -12,7 +12,7 @@
 
   border-radius: 65% 25% 0 0;
 
-  p {
+  &__text {
     font-family: $mainFont;
     font-size: 28px;
   }
@@ -27,6 +27,11 @@
     outline: none;
     font-weight: 500;
     text-decoration: none;
+  }
+
+  &__more {
+    margin: 0;
+    font-size: 14px;
   }
 
   a:hover {

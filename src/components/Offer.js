@@ -1,10 +1,10 @@
 import React from "react";
-import { CircularProgress } from "@material-ui/core";
 
 const Offer = () => {
   return (
     <>
-      <div className="offer container d-flex flex-column justify-content-center align-items-center my-5">
+      <div className="offer container d-flex flex-column justify-content-center align-items-center my-5"
+      id="offer">
         <h2 className="mb-5">Co oferujemy?</h2>
 
         <div className="d-flex justify-content-around mt-3 w-100">
@@ -14,12 +14,19 @@ const Offer = () => {
               Pełna obsługa fotograficzna eventów. Współpracujemy z agencjami
               eventowymi, PR-owymi oraz bezpośrednio z klientami korporacyjnymi.
               Dzięki 10-letniemu doświadczeniu w fotografii eventowej
-              gwarantujemy najwyższą jakość usług. 
-              <br/>
-              Za nami setki realizacji i
-              ogrom zadowolonych klientów.
+              gwarantujemy najwyższą jakość usług.
+              <br />
+              Za nami setki realizacji i ogrom zadowolonych klientów.
             </p>
-            <button>Zapytaj o wycenę</button>
+
+            <div className="offer__check">
+              <p>zapytaj o wycenę</p>
+              <a
+                href="mailto:prod.house.pl@gmail.com"
+                className="offer__check__button"
+              >
+              </a>
+            </div>
           </div>
         </div>
       </div>

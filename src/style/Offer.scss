@@ -1,6 +1,6 @@
 .offer {
   scroll-snap-align: start;
-  
+
   h2 {
     font-family: $mainFont;
     font-weight: 700;
@@ -31,6 +31,40 @@
       border-radius: 0 0 8px 8px;
       padding: 10px;
       margin-top: 10px;
+    }
+  }
+
+  &__check {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #ef4b6c;
+      font-size: 25px;
+      text-decoration: none;
+      color: #fff;
+      
+
+      &:hover {
+        color: #fff;
+      }
+
+      &::before {
+        font-family: "FontAwesome";
+        content: "\f0e0";
+      }
+
+      &:hover::before {
+        content: "\f2b6";
+      }
     }
   }
 }

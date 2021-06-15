@@ -4,7 +4,7 @@ import { LogoNoBg } from "../assets/images";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header" id="header">
       <img src={LogoNoBg} alt="logo" className="header__logo" />
       <div className="header__wrapper container">
         <div className="row">
@@ -14,7 +14,7 @@ const Header = () => {
               Współpracujemy z agencjami eventowymi oraz reklamowymi przy
               produkcjach Foto i Video
             </p>
-            <a href="/" className="mt-2">
+            <a href="#contact" className="mt-2">
               Kontakt
             </a>
 
