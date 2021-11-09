@@ -20,14 +20,14 @@
 
   .image {
     position: relative;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 500;
 
     transition: 0.3s;
 
     &:hover {
       opacity: 0.9;
-      font-size: 80px;
+      font-size: 40px;
     }
 
     &:hover img {
@@ -39,6 +39,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      width: 80%;
+      text-align: center;
 
       border: 1px solid white;
       background-color: rgba(0, 0, 0, 0.5);
