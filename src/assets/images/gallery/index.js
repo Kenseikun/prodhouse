@@ -1,12 +1,13 @@
-import a from "./01.jpeg";
-import b from "./02.jpeg";
-import c from "./03.jpeg";
-import d from "./04.jpeg";
-import e from "./05.jpeg";
-import f from "./07.jpeg";
-import g from "./08.jpeg";
-import h from "./09.jpeg";
-import i from "./10.jpeg";
-import j from "./11.jpeg";
+import moda from "./01.jpeg";
+import reklama from "./02.jpeg";
+import event from "./03.jpeg";
+import bussiness from "./04.jpeg";
 
-export { a, b, c, d, e, f, g, h, i, j };
+const images = [
+  { name: "moda", url: moda, domain: "www.wp.pl" },
+  { name: "reklama", url: reklama, domain: "www.onet.pl" },
+  { name: "event", url: event, domain: "www.interia.pl" },
+  { name: "business", url: bussiness, domain: "www.interia.pl" },
+];
+
+export { images };

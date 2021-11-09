@@ -1,27 +1,37 @@
 import React from "react";
 
-import { a, b, c, d, e, f, g, h, i, j } from "../assets/images/gallery";
-
-const images = [a, b, c, d, e, f, g, h, i, j];
+import { images } from "../assets/images/gallery";
 
 const Portfolio = () => {
   return (
-    <div
-      className="portfolio container d-flex flex-column justify-content-center align-items-center mb-5"
-      id="portfolio"
-    >
+    <section className="portfolio container d-flex flex-column justify-content-center align-items-center my-5">
       <h2 className="mb-5">Portfolio</h2>
 
-      <div className="portfolio__gallery">
-        {images.map((image) => {
-          return (
-            <>
-              <img src={image} alt={image} key={image}  className="me-1"/>
-            </>
-          );
-        })}
+      <div className="container-lg">
+        <div className="row row-cols-1 row-cols-sm-2 row-row-cols-md-3">
+          {images.map((image) => {
+            return (
+              <>
+                <div className="col" key={image.name}>
+                  <div className="image" key={image.name}>
+                    <a
+                      className="image__name"
+                      href={`https://${image.domain}`}
+                      src={image.url}
+                    >
+                      {image.name}
+                    </a>
+                    <a href={`https://${image.domain}`}>
+                      <img className="mt-2" src={image.url} alt="" />
+                    </a>
+                  </div>
+                </div>
+              </>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
