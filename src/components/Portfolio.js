@@ -22,10 +22,11 @@ const Portfolio = () => {
                       href={image.domain}
                       src={image.url}
                       target="_blank"
+                      rel="noreferrer"
                     >
                       {image.name}
                     </a>
-                    <a href={image.domain} target="_blank">
+                    <a href={image.domain} target="_blank" rel="noreferrer">
                       <img className="mt-2" src={image.url} alt="" />
                     </a>
                   </div>
