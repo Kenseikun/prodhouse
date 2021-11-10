@@ -1,13 +1,18 @@
-import moda from "./01.jpeg";
-import reklama from "./02.jpeg";
-import event from "./03.jpeg";
-import bussiness from "./04.jpeg";
+import event from "./event.jpg";
+import portrait from "./portrait.jpg";
+import automotive from "./automotive.jpg";
+import ad from "./ad.jpg";
+import architecture from "./architecture.jpg";
+import products from "./products.jpg";
+
 
 const images = [
-  { name: "moda", url: moda, domain: "www.wp.pl" },
-  { name: "reklama", url: reklama, domain: "www.onet.pl" },
-  { name: "event", url: event, domain: "www.interia.pl" },
-  { name: "business", url: bussiness, domain: "www.interia.pl" },
+  { name: "event", url: event, domain: "https://prodhouse.pixieset.com/event/" },
+  { name: "portret / moda", url: portrait, domain: "https://prodhouse.pixieset.com/portrait/" },
+  { name: "motoryzacja", url: automotive, domain: "https://prodhouse.pixieset.com/automotive/" },
+  { name: "reklama", url: ad, domain: "https://prodhouse.pixieset.com/advertisement/" },
+  { name: "architektura", url: architecture, domain: "https://prodhouse.pixieset.com/architecture/" },
+  { name: "produkty", url: products, domain: "https://prodhouse.pixieset.com/products/" },
 ];
 
 export { images };
