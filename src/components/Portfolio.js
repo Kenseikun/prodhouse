@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <section
       className="portfolio container d-flex flex-column justify-content-center align-items-center my-5"
-      id="offer"
+      id="portfolio"
     >
       <h2 className="mb-5">Portfolio</h2>
 
