@@ -4,7 +4,10 @@ import { images } from "../assets/images/gallery";
 
 const Portfolio = () => {
   return (
-    <section className="portfolio container d-flex flex-column justify-content-center align-items-center my-5">
+    <section
+      className="portfolio container d-flex flex-column justify-content-center align-items-center my-5"
+      id="offer"
+    >
       <h2 className="mb-5">Portfolio</h2>
 
       <div className="container-lg">
@@ -16,12 +19,13 @@ const Portfolio = () => {
                   <div className="image" key={image.name}>
                     <a
                       className="image__name"
-                      href={`https://${image.domain}`}
+                      href={image.domain}
                       src={image.url}
+                      target="_blank"
                     >
                       {image.name}
                     </a>
-                    <a href={`https://${image.domain}`}>
+                    <a href={image.domain} target="_blank">
                       <img className="mt-2" src={image.url} alt="" />
                     </a>
                   </div>
